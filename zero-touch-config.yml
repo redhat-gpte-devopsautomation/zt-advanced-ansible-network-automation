@@ -23,5 +23,7 @@ tabs:
     port: 8443
     path: /?folder=/home/student
   - name: ">_CLI"
+    port: 443
     path: /tty1
+  
   
