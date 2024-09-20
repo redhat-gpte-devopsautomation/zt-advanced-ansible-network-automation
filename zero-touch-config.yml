@@ -1,0 +1,26 @@
+---
+
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: lab-0
+      label: Lab-0
+      solveButton: true
+    - name: lab-1
+      label: Lab-1
+      solveButton: true
+    - name: lab-2
+      label: Lab-2
+      solveButton: true
+    - name: lab-3
+      label: Lab-3
+      solveButton: true
+
+
+tabs:
+  - name: VSCode Editor
+    port: 8443
+    path: /?folder=/home/student
+
+  

@@ -1,0 +1,82 @@
+= zt-writing-your-first-playbook
+Zero Touch Writing your first playbook lab
+
+
+== Understanding Directory Structure
+. Content Directory
++
+.tree output
+[source,shell]
+----
+.
+├── README.adoc                 # Readme file
+├── content                     # Content directory
+├── runtime-automation          # Playbook directory
+├── zero-touch-config.yml       # Configuration file
+└── zero-touch-site.yml         
+----
+
+
+. Example: Module Playbook Directory Structure
++
+.tree output
+[source,shell]
+----
+runtime-automation/
+├── 01-playbook-inventory               # The directory name should be the same as 
+│                                       # the module content page name
+│   ├── setup.yml                       # Setup playbook which run at start of module 
+│                                       # and when clicked on next button
+│   ├── solve.yml                       # Solve playbook, run when clicked on solve button
+│   └── validation.yml                  # Validation playbook, run when click on next button
+├── 02-playbook-directory-structure
+│   ├── setup.yml
+│   ├── solve.yml
+│   └── validation.yml
+│
+├── # --- output Omitted ---
+│
+├── 10-roles
+│   ├── setup.yml
+│   ├── solve.yml
+│   └── validation.yml
+├── ansible.cfg                         # Ansible configuration used with module playbooks
+└── inventory                           # Inventory for the playbook
+----
+
+== Understanding Zero Touch Configration file
+. Example: The *zero-touch-config.yml* configuration file
++
+.tree output
+[source,yaml]
+----
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: 01-playbook-inventory               # Module Name
+      label: Playbook Inventory                 # Module Label
+      solveButton: true                         # Enable Solve button
+    - name: 02-playbook-directory-structure
+      label: Playbook Directory Structure
+      solveButton: true
+   
+    # --- output Omitted ---
+   
+    - name: 10-roles
+      label: Roles
+      solveButton: true
+
+tabs:
+  - name: VSCode Editor                         # Tab name
+    port: 8443                                  # Port no of the service
+    path: /?folder=/home/rhel/ansible-files/    # Path suffix
+  - name: ">_control"
+    port: 443
+    path: /tty1
+----
+
+NOTE: Keep the rest of directories and files as default. 
+
+IMPORTANT: This stucture works well with agnosticd role *showroom* .

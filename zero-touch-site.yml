@@ -1,0 +1,20 @@
+---
+site:
+  title: "Advanced Ansible Network Automation"
+  url: https://demo.redhat.com/course-template
+  start_page: modules::lab-0.adoc
+
+content:
+  sources:
+    - url: ./
+      start_path: content
+ui:
+  bundle:
+    url: https://github.com/rhpds/nookbag-bundle/releases/download/v0.0.2/bundle.zip
+    snapshot: true
+
+output:
+  dir: ./www/www
+
+runtime:
+  cache_dir: ./.cache/antora
