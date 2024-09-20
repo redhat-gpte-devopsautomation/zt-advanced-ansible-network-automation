@@ -2,4 +2,4 @@
 control
 
 [all:vars]
-ansible_user = student
+ansible_user = student        `

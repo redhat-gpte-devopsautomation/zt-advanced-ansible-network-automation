@@ -22,5 +22,6 @@ tabs:
   - name: VSCode Editor
     port: 8443
     path: /?folder=/home/student
-
+  - name: ">_CLI"
+    path: /tty1
   
