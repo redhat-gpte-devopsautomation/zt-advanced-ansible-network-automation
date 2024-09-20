@@ -1,8 +1,7 @@
 ---
 - name: Setup control node
   hosts: controller
-  vars:
-    USER: rhel
+  gather_facts: false
   tasks:
     - name: Print msg
       ansible.builtin.debug:

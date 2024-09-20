@@ -1,1 +1,0 @@
-# zt-advanced-ansible-network-automation
