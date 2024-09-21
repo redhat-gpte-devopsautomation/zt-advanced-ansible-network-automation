@@ -65,7 +65,7 @@ If by some reason you get stuck in a lab - then here's what you should do. **Fol
 
 The lab environment which is provided to each student runs in a single Linux server, which you are provided access to, as shown below:
 
-image:0_overview.png[image, 70%]
+image:0_overview.png[image, 95%]
 
 :exclamation: On purpose, security in this lab has not been made a priority, that is so you as a student get more freedom to learn. You have passwordless admin access on all systems. With that said, if you do something which is outside of the labs and break your systems, _you get to keep all the pieces_ ;) 
 
@@ -88,48 +88,48 @@ Use below links as reference when needed. For now, continue on:
 . Open up your web browser and access the web based Visual Studio code environment, as shown below and enter in the workshop password.
 The workshop password is _rhadvnetworkshop2024_
 +
-image::1_welcome.png[image, 70%]
+image::1_welcome.png[image, 95%]
 
 . Next, you select a visual theme and also ensure to click on "Rich support for all your language". After that click "Mark as done".
 +
-image:2_selection.png[image, 70%]
+image:2_selection.png[image, 95%]
 
 . Now we will install the Ansible extention as well. Click on the three stripes on the left hand side menu and select View > Extentions.
 +
-image:3_extensions.png[image, 70%]
+image:3_extensions.png[image, 95%]
 
 . Type in "ansible" in the search field and click "Install" on the one labeled _redhat_.
 +
-image:4_extensions.png[image, 70%]
+image:4_extensions.png[image, 95%]
 
 . Validate that once the Ansible extension has been installed - it look as below.
 +
-image:5_extensions.png[image, 70%]
+image:5_extensions.png[image, 95%]
 
 . Next, click on the left hand side menu item symbolized by two documents, and select "Open Folder". Then select "/home/student/advanced-networking-workshop" in the drop-down which opens up and click on "OK".
 This is where you can browse files in the lab.
 +
-image:6_folder.png[image, 70%]
+image:6_folder.png[image, 95%]
 
 . Check the "Trust the authors of all files in the parent folder "student" and click "Yes, I trust the authors".
 +
-image:7_trust.png[image, 70%]
+image:7_trust.png[image, 95%]
 
 . You create new files by clicking on the "New file" symbol with a + superimposed over a document. Remember this for when you are asked to create files during the lab.
 +
-image:8_file.png[image, 70%]
+image:8_file.png[image, 95%]
 
 . Observe how files opened or created appears as separate tabs, just like in a web browser.
 +
-image:9_file.png[image, 70%]
+image:9_file.png[image, 95%]
 
 . Finally, we will open up a terminal to the underlying Linux operating system. Click on the three stripes on the top of the left hand side menu, then: Terminal > New Terminal.
 +
-image:10_terminal.png[image, 70%]
+image:10_terminal.png[image, 95%]
 
 . Please observe that if you are asked to run commands during the lab, this is where that happens. As shown below. Also observe that you can adjust how large part the various things in the browser (file browser, open files and the terminal) takes up.
 +
-image:11_terminal.png[image, 70%]
+image:11_terminal.png[image, 95%]
 
 You are now done with the introduction to the lab and are ready to start learn about advanced networking automation using Ansible.
 
