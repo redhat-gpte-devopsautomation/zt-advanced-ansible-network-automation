@@ -83,41 +83,52 @@ Use below links as reference when needed. For now, continue on:
 
 == 0.8 Accessing the lab for the first time
 
-1. Ensure you have received an URL which you access the lab using your web browser. Please note. This lab has been tested using Chrome and Firefox. If you use anything else, you are on your own.
+. Ensure you have received an URL which you access the lab using your web browser. Please note. This lab has been tested using Chrome and Firefox. If you use anything else, you are on your own.
 
-2. Open up your web browser and access the web based Visual Studio code environment, as shown below and enter in the workshop password.
+. Open up your web browser and access the web based Visual Studio code environment, as shown below and enter in the workshop password.
 The workshop password is _rhadvnetworkshop2024_
++
 image::1_welcome.png[image, 70%]
 
-3. Next, you select a visual theme and also ensure to click on "Rich support for all your language". After that click "Mark as done".
+. Next, you select a visual theme and also ensure to click on "Rich support for all your language". After that click "Mark as done".
++
 image:2_selection.png[image, 70%]
 
-4. Now we will install the Ansible extention as well. Click on the three stripes on the left hand side menu and select View > Extentions.
+. Now we will install the Ansible extention as well. Click on the three stripes on the left hand side menu and select View > Extentions.
++
 image:3_extensions.png[image, 70%]
 
-5. Type in "ansible" in the search field and click "Install" on the one labeled _redhat_.
+. Type in "ansible" in the search field and click "Install" on the one labeled _redhat_.
++
 image:4_extensions.png[image, 70%]
 
-6. Validate that once the Ansible extension has been installed - it look as below.
+. Validate that once the Ansible extension has been installed - it look as below.
++
 image:5_extensions.png[image, 70%]
 
-7. Next, click on the left hand side menu item symbolized by two documents, and select "Open Folder". Then select "/home/student/advanced-networking-workshop" in the drop-down which opens up and click on "OK".
+. Next, click on the left hand side menu item symbolized by two documents, and select "Open Folder". Then select "/home/student/advanced-networking-workshop" in the drop-down which opens up and click on "OK".
 This is where you can browse files in the lab.
++
 image:6_folder.png[image, 70%]
 
-8. Check the "Trust the authors of all files in the parent folder "student" and click "Yes, I trust the authors".
+. Check the "Trust the authors of all files in the parent folder "student" and click "Yes, I trust the authors".
++
 image:7_trust.png[image, 70%]
 
-9. You create new files by clicking on the "New file" symbol with a + superimposed over a document. Remember this for when you are asked to create files during the lab.
+. You create new files by clicking on the "New file" symbol with a + superimposed over a document. Remember this for when you are asked to create files during the lab.
++
 image:8_file.png[image, 70%]
 
-10. Observe how files opened or created appears as separate tabs, just like in a web browser.
+. Observe how files opened or created appears as separate tabs, just like in a web browser.
++
 image:9_file.png[image, 70%]
 
-11. Finally, we will open up a terminal to the underlying Linux operating system. Click on the three stripes on the top of the left hand side menu, then: Terminal > New Terminal.
+. Finally, we will open up a terminal to the underlying Linux operating system. Click on the three stripes on the top of the left hand side menu, then: Terminal > New Terminal.
++
 image:10_terminal.png[image, 70%]
 
-12. Please observe that if you are asked to run commands during the lab, this is where that happens. As shown below. Also observe that you can adjust how large part the various things in the browser (file browser, open files and the terminal) takes up.
+. Please observe that if you are asked to run commands during the lab, this is where that happens. As shown below. Also observe that you can adjust how large part the various things in the browser (file browser, open files and the terminal) takes up.
++
 image:11_terminal.png[image, 70%]
 
 You are now done with the introduction to the lab and are ready to start learn about advanced networking automation using Ansible.
@@ -125,4 +136,3 @@ You are now done with the introduction to the lab and are ready to start learn a
 ```
 End-of-lab
 ```
-[Go to the next lab, lab 1](../lab-1/README.md)
