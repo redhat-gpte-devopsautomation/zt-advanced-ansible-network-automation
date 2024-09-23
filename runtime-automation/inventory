@@ -1,5 +1,5 @@
 [controller]
-ansible
+ansible.example.com
 
 [all:vars]
 ansible_user = student
