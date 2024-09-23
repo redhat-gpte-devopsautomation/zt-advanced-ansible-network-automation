@@ -4,4 +4,4 @@
   tasks:
     - name: Print msg
       ansible.builtin.debug:
-        msg: "Setup has completed"
+        msg: "Solve has completed"
