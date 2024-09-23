@@ -2,7 +2,7 @@
 :experimental:
 :imagesdir: ../assets/images/
 :toc:
-
+:toclevels: 4
 [.text.justified ]
 = Section 1 Fundamentals, test automation, information related tasks
 
