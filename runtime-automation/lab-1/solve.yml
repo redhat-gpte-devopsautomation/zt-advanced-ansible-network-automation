@@ -1,6 +1,7 @@
 ---
 - name: Solve control node
   hosts: controller
+  gather_facts: false
   tasks:
     - name: Print msg
       ansible.builtin.debug:
