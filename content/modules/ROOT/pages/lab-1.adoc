@@ -64,7 +64,7 @@ based routers using vrnetlab or boxen integration
 
 
 
-:boom: Task 1: If you can. linkhttps://www.youtube.com/watch?v=xdi7rwdJgkg[Click here, to have a look at this introductionary video on YouTube, for containerlab]
+☑️ Task 1: If you can. linkhttps://www.youtube.com/watch?v=xdi7rwdJgkg[Click here, to have a look at this introductionary video on YouTube, for containerlab]
 
 ==== 1.1.2.1 Creating a containerlab test environment
 In this section, you will learn how to create your first containerlab environment, which we will use to test against.
@@ -75,7 +75,7 @@ Containerlab uses a few main components:
 * A container engine, such as podman or docker.
 * A Linux operating system to run it all on
 
-An example deployment is shown below. When running the containerlab command to deploy a setup of network devices, you feed it a so called topology file, which containers how things should be setup. In our example, it's called containerlab-basic.yml. Command output includes the management IP addresses of the devices you have created.
+DO NOT run below instructions. An example deployment is only shown below. When running the containerlab command to deploy a setup of network devices, you feed it a so called topology file, which containers how things should be setup. In our example, it's called containerlab-basic.yml. Command output includes the management IP addresses of the devices you have created.
 
 [source,shell]
 ----
@@ -149,13 +149,13 @@ aboot			boot-config  fastpkttx.backup  if-wait.sh	 persist   SsuRestoreLegacy.lo
 AsuFastPktTransmit.log	debug	     Fossil	       kickstart-config  schedule  SsuRestore.log	 system_mac_address
 ----
 
-. :boom: Task 1: Now that you understand a bit better about containerlab, it's time to create your own network test environment. To do so, you need to go to your terminal, shown below.
+. ☑️ Task 1: Now that you understand a bit better about containerlab, it's time to create your own network test environment. To do so, you need to go to your terminal, shown below.
 
 +
 image::terminal.png[Terminal, 95%]
 
 
-. :boom: Task 2: When you paste information in from this page to your terminal the first time, you will be asked by your browser to allow this. Do so.
+. ☑️ Task 2: When you paste information in from this page to your terminal the first time, you will be asked by your browser to allow this. Do so.
 +
 image::accept.png[Paste]
 
@@ -163,7 +163,7 @@ image::accept.png[Paste]
 NOTE: When you are asked to run commands, that is always done in your terminal.
 
 
-. :boom: Task 4: Create a simple containerlab definition, as follows:
+. ☑️ Task 4: Create a simple containerlab definition, as follows:
 * Two Arista switches which are connected to each other
 * Save your work in the containerlab directory and name the file lab1.yml.
 * To get an idea of the basic structure of your YAML based topology file, link:https://containerlab.dev/quickstart/[click here: https://containerlab.dev/quickstart/]
@@ -405,7 +405,7 @@ End of solution.
 
 
 
-* ☑️  Task 7: Next, SSH to your switches using the admin user and validate ports Ethernet9 and 10 are connected. SSH to your switches by entering the SSH command in your terminal as shown below. After this enter the correct show command to display port status.
+* ☑️ Task 7: Next, SSH to your switches using the admin user and validate ports Ethernet9 and 10 are connected. SSH to your switches by entering the SSH command in your terminal as shown below. After this enter the correct show command to display port status.
 +
 [source,shell]
 ----
@@ -1256,7 +1256,7 @@ Armed with knowledge about how we can pull information from devices and also how
 A very common operational task which fits what we have learned like a glove, is troubleshooting.
 Let's have a look at a practical example, which is helping to troubleshoot connectivity issues for a server to a leaf/access switch. The idea is that we get a playbook which will print out the ARP table for a given port.
 
-:boom: Task 1: Create a playbook which use the arista.eos.eos_command module to display the ARP table on a specific port, also ensure that:
+☑️ Task 1: Create a playbook which use the arista.eos.eos_command module to display the ARP table on a specific port, also ensure that:
 * Call the playbook arp_check.yml
 * The name of the port we look at should be set using a variable called interface_name, allowing us to set it at runtime.
 * Name the variable interface_name set it to be Ethernet9 by default.
