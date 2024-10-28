@@ -220,7 +220,8 @@ In general you have three different main approaches you can select from when app
 Don't worry though, we will try out all the different methods, so you can decide yourself what works and what doesn't.
 
 == 2.3 Using the command module to accomplish our desired state
-We will start off doing a classic, which is learning what to NOT do: using the command module directly to make modification. The main reason why we cover it, is so that you may see it's limitations on full display. 
+We will start off doing a classic, which is learning what to NOT do: using the command module directly to make modification. 
+IMPORTANT: The main reason why we cover it, is so that you may see it's limitations on full display. 
 
 NOTE: Feel free to use the solutions, you are not meant to spend any significant time figure this part out.
 
