@@ -25,7 +25,7 @@ Ansible is versatile, meaning you can approach automating your network in many d
 === 1.1.1: Vendor differences
 When doing Ansible automation outside of the domain of networking, we are accustomed to use the same settings and the same modules, even when we automate against different operating systems. When it comes to networking, this is not always true.
 
-* Task 1: Review main differences between network vendors:
+* ☑️ Task 1: Review main differences between network vendors:
 
 ** How you connect to the devices. link:https://docs.ansible.com/ansible/latest/network/user_guide/platform_index.html[Explore the list of options here].
 
@@ -149,13 +149,14 @@ aboot			boot-config  fastpkttx.backup  if-wait.sh	 persist   SsuRestoreLegacy.lo
 AsuFastPktTransmit.log	debug	     Fossil	       kickstart-config  schedule  SsuRestore.log	 system_mac_address
 ----
 
-. ☑️ Task 1: Now that you understand a bit better about containerlab, it's time to create your own network test environment. To do so, you need to go to your terminal, shown below.
+☑️ Task 1: Now that you understand a bit better about containerlab, it's time to create your own network test environment. To do so, you need to go to your terminal, shown below.
 
 +
 image::terminal.png[Terminal, 95%]
 
 
-. ☑️ Task 2: When you paste information in from this page to your terminal the first time, you will be asked by your browser to allow this. Do so.
+☑️ Task 2: When you paste information in from this page to your terminal the first time, you will be asked by your browser to allow this. Do so.
+
 +
 image::accept.png[Paste]
 
@@ -163,7 +164,8 @@ image::accept.png[Paste]
 NOTE: When you are asked to run commands, that is always done in your terminal.
 
 
-. ☑️ Task 4: Create a simple containerlab definition, as follows:
+☑️ Task 3: Create a simple containerlab definition, as follows:
+
 * Two Arista switches which are connected to each other
 * Save your work in the containerlab directory and name the file lab1.yml.
 * To get an idea of the basic structure of your YAML based topology file, link:https://containerlab.dev/quickstart/[click here: https://containerlab.dev/quickstart/]
@@ -175,7 +177,7 @@ NOTE: When you are asked to run commands, that is always done in your terminal.
 
 +
 ======
-.🔓 Show solution: Task 2
+.🔓 Show solution: Task 3
 [%collapsible]
 =====
 * Create lab1.yml as follows:
@@ -203,16 +205,16 @@ topology:
 =====
 ======
 ```
-End of solution: Task 2.
+End of solution: Task 3.
 ```
 
 
 ---
 
-* ☑️ Task 3: Now, let's review the configuration used to start up our switches. Run the "cat" command in your Linux terminal, to view the *~/advanced-networking-workshop/containerlab/configs/leaf1-start.cfg/leaf2-start.cfg* files, or open them up in VScode.
+* ☑️ Task 4: Now, let's review the configuration used to start up our switches. Run the "cat" command in your Linux terminal, to view the *~/advanced-networking-workshop/containerlab/configs/leaf1-start.cfg/leaf2-start.cfg* files, or open them up in VScode.
 +
 ======
-.🔓 Show example solution: Task 3
+.🔓 Show example solution: Task 4
 [%collapsible]
 =====
 * Create lab1.yml as follows:
@@ -282,7 +284,7 @@ end
 
 
 ```
-End of solution: Task 3.
+End of solution: Task 4.
 ```
 
 
@@ -297,7 +299,7 @@ If you SSH to a device in your setup, you will authenticate automatically, that 
 ====
 
 
-* ☑️ Task 4: Next, you are ready to start your lab environment. Use the "sudo containerlab" CLI command, in your terminal, accordingly:
+* ☑️ Task 5: Next, you are ready to start your lab environment. Use the "sudo containerlab" CLI command, in your terminal, accordingly:
 * Use --runtime podman
 * If you have already tried to deploy the lab once, add the --reconfigure parameter.
 * Run "sudo containerlab --help" to get more information.
@@ -313,7 +315,7 @@ WARN[0004] Unable to load kernel module "ip_tables" automatically "load ip_table
 +
 
 ======
-.🔓 Show example solution: Task 4
+.🔓 Show example solution: Task 5
 [%collapsible]
 =====
 
@@ -348,13 +350,13 @@ INFO[0018] Adding ssh config for containerlab nodes
 
 
 ```
-End of solution: Task 4
+End of solution: Task 5
 ```
 
 
 ---
 
-* ☑️ Task 5: Run the "scripts/ansibe_hosts.sh basic" command to generate a properly configured Ansible inventory ($LABDIR/inventory) and accept SSH fingerprints
+* ☑️ Task 6: Run the "scripts/ansibe_hosts.sh basic" command to generate a properly configured Ansible inventory ($LABDIR/inventory) and accept SSH fingerprints
 +
 [source,shell]
 ----
@@ -365,7 +367,7 @@ NOTE: Please note that a successful run of the command does not generate any out
 
 ---
 
-* ☑️  Task 6: Validate that your have a correctly configured inventory file, by opening it in VScode, or enter below commands in your terminal:
+* ☑️  Task 7: Validate that your have a correctly configured inventory file, by opening it in VScode, or enter below commands in your terminal:
 +
 [source,shell]
 ----
@@ -405,7 +407,7 @@ End of solution.
 
 
 
-* ☑️ Task 7: Next, SSH to your switches using the admin user and validate ports Ethernet9 and 10 are connected. SSH to your switches by entering the SSH command in your terminal as shown below. After this enter the correct show command to display port status.
+* ☑️ Task 8: Next, SSH to your switches using the admin user and validate ports Ethernet9 and 10 are connected. SSH to your switches by entering the SSH command in your terminal as shown below. After this enter the correct show command to display port status.
 +
 [source,shell]
 ----
@@ -446,14 +448,14 @@ Connection to 172.20.20.144 closed.
 ======
 
 ```
-End of solution: Task 7.
+End of solution: Task 8.
 ```
 
 
 NOTE: If you have time, you can also validate that the overall running configuration is correct.
 
 
-* ☑️ Task 8: Next create a simple playbook (call it ping.yml) which you save in the advanced-networking-workshop directory, which uses the [ansible.builtin.ping](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ping_module.html) module to ping the switches.
+* ☑️ Task 9: Next create a simple playbook (call it ping.yml) which you save in the advanced-networking-workshop directory, which uses the [ansible.builtin.ping](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ping_module.html) module to ping the switches.
 
 +
 ======
@@ -475,13 +477,13 @@ NOTE: If you have time, you can also validate that the overall running configura
 ======
 
 ```
-End of solution: Task 8.
+End of solution: Task 9.
 ```
 
 
 
 
-* ☑️ Task 9: Next, run a static code analysis on your playbook, using the "ansible-lint" command.
+* ☑️ Task 10: Next, run a static code analysis on your playbook, using the "ansible-lint" command.
 
 +
 ======
@@ -503,7 +505,7 @@ Passed: 0 failure(s), 0 warning(s) on 1 files. Last profile that met the validat
 ======
 
 ```
-End of solution: Task 9.
+End of solution: Task 10.
 ```
 
 
@@ -511,11 +513,11 @@ WARNING: If you had 0 failures and 0 warnings, you can go on to the next task, o
 
 
 
-* ☑️ Task 10: Next, run the playbook your created (ping.yml) against our new switches. Use the inventory file which was created earlier.
+* ☑️ Task 11: Next, run the playbook your created (ping.yml) against our new switches. Use the inventory file which was created earlier.
 
 +
 ======
-.🔓 Show solution: Task 9
+.🔓 Show solution: Task 11
 [%collapsible]
 =====
 
@@ -547,7 +549,7 @@ clab-lab1-leaf2 : ok=2    changed=0    unreachable=0    failed=0    skipped=0   
 ======
 
 ```
-End of solution: Task 9.
+End of solution: Task 11.
 ```
 
 
@@ -644,7 +646,7 @@ End of solution: Task 1.
 ```
 
 
-* ☑️  Task 2: Now, let's run the playbook you created.
+* ☑️ Task 2: Now, let's run the playbook you created.
 
 +
 ======
@@ -924,7 +926,7 @@ Now that you have learned about different methods to pull information from your 
 
 First off, let's review the different useful tools which helps us to process information gathered by facts and commands.
 
-* ☑️  Task 1: Have a brief look at the different tools below and imagine how they may be useful.
+* ☑️ Task 1: Have a brief look at the different tools below and imagine how they may be useful.
 
 Ansible modules:
 * link:https://docs.ansible.com/ansible/latest/collections/ansible/builtin/assert_module.html[assert]
@@ -942,7 +944,7 @@ Managing error handling:
 Now, let's create some smarter versions of the playbooks we have previously create.
 
 
-* ☑️  Task 2: Create a version of below playbook (eos_facts.yml) which only uses the eos_facts module when you have detected that it is an Arista switch.
+* ☑️ Task 2: Create a version of below playbook (eos_facts.yml) which only uses the eos_facts module when you have detected that it is an Arista switch.
 
 +
 [source,yaml]
@@ -1041,7 +1043,7 @@ End of solution: Task 3
 ```
 
 
-* ☑️  Task 4: And now you run the playbook against your inventory.
+* ☑️ Task 4: And now you run the playbook against your inventory.
 
 +
 ======
