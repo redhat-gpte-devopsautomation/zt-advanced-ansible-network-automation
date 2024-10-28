@@ -61,7 +61,7 @@ more spine1-full.cfg
 That is how your switches should look like when you are done.
 
 == 3.2 Automating your network
-Now it's time for you to decide on how you will use Ansible to accomplish a working version of the EVPN BPG architecture. The easiest way to accomplish this will be to use the arista.eos.eos_config module and push the working running configs to each switch. In real life, that is not always the best approach. Consider what parts of this network's configuration which you may be changing more often. Are there parts of the network configuration which you would rather manage separately? 
+IMPORTANT: Now it's time for you to decide on how you will use Ansible to accomplish a working version of the EVPN BPG architecture. The easiest way to accomplish this will be to use the arista.eos.eos_config module and push the working running configs to each switch. You can consider if you want to use this as an initial approach. In real life, that is not always the best approach. Consider what parts of this network's configuration which you may be changing more often. Are there parts of the network configuration which you would rather manage separately? Perhaps different teams would manage, maintain or create different parts of the configuration. Consider if you want to adjust for this initially, or in a second iternation of development.
 
 . ☑️ Task: Decide on how you will setup the network, create your Ansible automation and run it.
 * If you end up in a dead end, you can always recreate the network by running the commands you ran to set it up first.
